@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.Navigation
+{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 50px;
+}
+.Navigation .logo
+{
+    display: flex;
+    align-items: center;
+}
+.Navigation .logo h3
+{
+    margin-left: 12px;
+    font-weight: 800;
+}
+.Navigation .logo .fa-solid
+{
+    color: #A259FF;
+}
+
+.menu
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu .signup div
+{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 30px;
+    justify-content: space-between;
+    background-color: #A259FF;
+    align-items: center;
+}
+.menu .signup div .fa-regular
+{
+    margin-right: 12px;
+}
+.menu .signup div p
+{
+    margin-right: 0px;
+}
+.menu .Connect
+{
+    margin-right: 30px;
+    
+}
+.menu .Rankings
+{
+    margin-right: 30px;
+    
+}
+.menu .Market
+{
+    margin-right: 30px;
+    
+}
+/* css profile */
+.profile
+{
+    width: 100%;
+    height: 320px;
+    background-image: url("./folder/image/Image\ PlaceHolder.png");
+    position: relative;
+}
+.profile .avatar
+{
+    position: absolute;
+    bottom: -50px;
+    left: 115px;
+}
+.info
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 40px 115px 115px;
+    background-color: #2B2B2B;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+}
+.info .frame1
+{
+    display: flex;
+    flex-direction: column;
+}
+.info .artist
+{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.stats
+{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.stats :first-child
+{
+    margin-right: 20px;
+}
+.stats :first-child+li
+{
+    margin-right: 20px;
+}
+.info .frame1 .bio
+{
+    margin-bottom: 30px;
+}
+.info .frame1 .bio h3
+{
+    color: #858584;
+    margin-bottom: 10px;
+}
+.info .frame1 .link h3
+{
+    color: #858584;
+    margin-bottom: 10px;
+}
+.info .frame1 .link ul
+{
+    list-style: none;
+    display: flex;
+}
+.info .frame1 .link ul :first-child
+{
+    margin-right: 10px;
+}
+.info .frame1 .link ul :first-child+li
+{
+    margin-right: 10px;
+}
+.info .frame1 .link ul :first-child+li+li
+{
+    margin-right: 10px;
+}
+.info .frame1 .link ul :first-child+li+li+li
+{
+    margin-right: 10px;
+}
+.info .frame2
+{
+    display: flex;
+    font-size: 16px;
+}
+.info .frame2 .button1
+{
+    display: flex;
+    align-items: center;
+    width: 186px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    justify-content: center;
+    padding: 0 50px;
+}
+.info .frame2 .button1 .fa-regular
+{
+    margin-right: 12px;
+}
+.info .frame2 .button2
+{
+    display: flex;
+    width: 186px;
+    height: 60px;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #A259FF;
+    margin-left: 20px;
+    padding: 0 30px;
+    justify-content: center;
+}
+.info .frame2 .button2 .fa-solid
+{
+    color: #A259FF;
+    margin-right: 12px;
+}
+.frame
+{
+    height: 60px;
+    background-color: #2B2B2B;
+    padding: 10px 0px 60px 60px;
+    color: white;
+    border-top: 2px solid #858584;
+}
+.frame .tabs
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.frame .tabs :first-child
+{
+    display: flex;
+    width: 350px;
+    height: 60px;
+    padding: 30px;
+    align-items: center;
+    border-bottom: 2px solid #858584;
+}
+.frame .tabs :first-child h3
+{
+    width: fit-content;
+    height: 100%;
+    border-bottom: 0px solid #858584;
+}
+.frame .tabs :first-child p
+{
+    width: 50px;
+    height: 32px;
+    background-color: #858584;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.frame .tabs :first-child+li
+{
+    display: flex;
+    width: 350px;
+    height: 60px;
+    padding: 30px;
+    align-items: center;
+}
+.frame .tabs :first-child +li h3
+{
+    width: fit-content;
+    height: 100%;
+    border-bottom: 0px solid #858584;
+}
+.frame .tabs :first-child+li p
+{
+    width: 50px;
+    height: 32px;
+    background-color: #858584;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.frame .tabs :last-child
+{
+    display: flex;
+    width: 350px;
+    height: 60px;
+    align-items: center;
+}
+.frame .tabs :last-child h3
+{
+    width: fit-content;
+    height: 100%;
+    border-bottom: 0px solid #858584;
+}
+.frame .tabs :last-child p
+{
+    width: 50px;
+    height: 32px;
+    background-color: #858584;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.section
+{
+    padding: 80px 0px;
+    background-color: #3B3B3B;
+    color: white;
+}
+.section ul
+{
+    display: flex;
+    justify-content: center;
+}
+.section ul li
+{
+    width: 330px;
+    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+.section ul li .content
+{
+    padding: 20px 25px 30px 30px;
+
+}
+.section ul li .content  h2
+{
+    margin-bottom: 5px;
+}
+.section ul li .content div 
+{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.section ul li .content div img
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.section ul li .content div p 
+{
+    
+    font-size: 16px;
+    font-weight: bold;
+}
+.section ul li .content ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.section ul li .content ul :first-child
+{
+    width: 50%;
+    height: 100%;
+}
+.section ul li .content ul :first-child h4
+{
+    width: 100%;
+    color: #858584;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.section ul li .content ul :first-child p
+{
+    width: 100%;
+    font-size: 16px;
+}
+
+.section ul li .content ul :last-child
+{
+    width: 50%;
+}
+.section ul li .content ul :last-child h4
+{
+    width: 100%;
+    color: #858584;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.section ul li .content ul :last-child p
+{
+    width: 100%;
+    font-size: 16px;
+}
+.section .row1
+{
+    margin-bottom: 30px;
+}
+.section .row2
+{
+    margin-bottom: 30px;
+}
+.footer
+{
+    background-color: #2B2B2B;
+    padding: 40px 390px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.footer .frame1
+{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.footer .frame1 :first-child div
+{
+    width: 327px;
+    padding: 0px 84px 0px 0px;
+}
+.footer .frame1 :first-child div> div
+{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.footer .frame1 :first-child div>div i
+{
+    font-size: 32px;
+    color: #A259FF;
+    margin-right: 12px;
+}
+
+
+.footer .frame1 :first-child div  ul
+{
+    display: flex;
+    list-style: none;
+}
+.footer .frame1 :first-child div ul :nth-child(1),:nth-child(2),:nth-child(3)
+{
+    margin-right: 10px;
+}
+.footer .frame1 li div >h4
+{
+    margin-bottom: 25px;
+}
+ .footer .frame1 li div > p
+{
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.footer .frame1 :nth-child(2) div
+{
+    width: 240px;
+}
+ 
+.footer .frame1 :last-child div
+{
+    width: 420px;
+}
+.footer .frame1 :last-child div>div 
+{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 420px;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .frame1 :last-child div div p
+{
+    color: #2B2B2B;
+    margin-bottom: 0px;
+} 
+.footer .frame1 :last-child div div h3
+{
+    width: 179px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    padding: 0px 50px;
+    margin: 0px;
+    line-height: 3;
+}  
+.footer .frame2
+{
+    border-top: 2px solid #858584;
+}
+.footer .frame2 p
+{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #CCCCCC;
+}
