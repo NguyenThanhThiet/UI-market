@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
+.container
+{
+    width: 100%;
+    background-color: #2B2B2B;
+}
 .Navigation
 {
     background-color: black;
@@ -14,19 +19,24 @@
     color: white;
     padding: 20px 50px;
 }
-.Navigation .logo
+.Navigation >.logo
 {
     display: flex;
     align-items: center;
 }
-.Navigation .logo h3
+.Navigation >.logo >h3
 {
     margin-left: 12px;
     font-weight: 800;
 }
-.Navigation .logo .fa-solid
+.Navigation >.logo >.fa-solid
 {
+    width: 32px;
+    height: 32px;
     color: #A259FF;
+    text-align: center;
+    line-height: 32px;
+    font-size: 25px;
 }
 
 .menu
@@ -34,8 +44,9 @@
     display: flex;
     list-style: none;
     align-items: center;
+    gap: 30px;
 }
-.menu .signup div
+.menu >.signup> div
 {
     display: flex;
     width: 150px;
@@ -46,29 +57,23 @@
     background-color: #A259FF;
     align-items: center;
 }
-.menu .signup div .fa-regular
+.menu >.signup >div> .fa-regular
 {
+    font-size: 20px;
     margin-right: 12px;
 }
-.menu .signup div p
+.menu >.signup> div> p
 {
-    margin-right: 0px;
+    width: 60px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600px;
 }
-.menu .Connect
+.Navigation> .fa-solid
 {
-    margin-right: 30px;
-    
+    display: none;
 }
-.menu .Rankings
-{
-    margin-right: 30px;
-    
-}
-.menu .Market
-{
-    margin-right: 30px;
-    
-}
+
 /* css profile */
 .profile
 {
@@ -76,8 +81,9 @@
     height: 320px;
     background-image: url("./folder/image/Image\ PlaceHolder.png");
     position: relative;
+    background-size: 100% 320px;
 }
-.profile .avatar
+.profile >.avatar
 {
     position: absolute;
     bottom: -50px;
@@ -87,78 +93,70 @@
 {
     display: flex;
     justify-content: space-between;
-    padding: 90px 40px 115px 115px;
+    padding:  40px 115px;
+    margin-top: 50px;
     background-color: #2B2B2B;
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 22px;
 }
-.info .frame1
+.info> .frame1
 {
+    width: 599px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
-.info .artist
+.info>.frame1>.frame2
+{
+    display: none;
+}
+.info >.artist
 {
     font-size: 50px;
     font-weight: bolder;
-    margin-bottom: 30px;
+}
+.info >.frame1> .button1
+{
+    display: none;
+}
+.info >.frame1> .button2
+{
+    display: none;
 }
 .stats
 {
     display: flex;
     list-style: none;
-    margin-bottom: 30px;
+    gap: 20px;
 }
-.stats :first-child
-{
-    margin-right: 20px;
-}
-.stats :first-child+li
-{
-    margin-right: 20px;
-}
-.info .frame1 .bio
-{
-    margin-bottom: 30px;
-}
-.info .frame1 .bio h3
+
+
+.info >.frame1> .bio h3
 {
     color: #858584;
     margin-bottom: 10px;
 }
-.info .frame1 .link h3
+.info >.frame1 >.link h3
 {
     color: #858584;
     margin-bottom: 10px;
 }
-.info .frame1 .link ul
+.info> .frame1 >.link ul
 {
     list-style: none;
     display: flex;
+    gap: 10px;
 }
-.info .frame1 .link ul :first-child
-{
-    margin-right: 10px;
-}
-.info .frame1 .link ul :first-child+li
-{
-    margin-right: 10px;
-}
-.info .frame1 .link ul :first-child+li+li
-{
-    margin-right: 10px;
-}
-.info .frame1 .link ul :first-child+li+li+li
-{
-    margin-right: 10px;
-}
-.info .frame2
+
+.info> .frame2
 {
     display: flex;
     font-size: 16px;
+    gap: 20px;
 }
-.info .frame2 .button1
+ .frame2>.button1
 {
     display: flex;
     align-items: center;
@@ -168,273 +166,226 @@
     background-color: #A259FF;
     justify-content: center;
     padding: 0 50px;
+    gap: 12px;
 }
-.info .frame2 .button1 .fa-regular
+ .frame2>.button1> .fa-regular
 {
-    margin-right: 12px;
+    font-size: 20px;
 }
-.info .frame2 .button2
+.frame2>.button1>p
+{
+    width: 113px;
+    height: 22px;
+}
+ .button2
 {
     display: flex;
-    width: 186px;
+    width: 145px;
     height: 60px;
     align-items: center;
     border-radius: 20px;
     border: 2px solid #A259FF;
-    margin-left: 20px;
     padding: 0 30px;
     justify-content: center;
+    gap: 12px;
 }
-.info .frame2 .button2 .fa-solid
+ .button2 .fa-solid
 {
     color: #A259FF;
-    margin-right: 12px;
 }
 .frame
 {
-    height: 60px;
+    width: 100%;
+    height: 70px;
     background-color: #2B2B2B;
-    padding: 10px 0px 60px 60px;
+    padding: 10px 0px 0px 0px;
     color: white;
     border-top: 2px solid #858584;
 }
-.frame .tabs
+.frame >.tabs
 {
+    width: 1050px;
+    height: 100%;
     display: flex;
     list-style: none;
     justify-content: space-around;
-    align-items: flex-end;
+    margin-left: calc(50% - 525px);
 }
-.frame .tabs :first-child
+.frame>.tabs>li
 {
-    display: flex;
     width: 350px;
     height: 60px;
-    padding: 30px;
+    display: flex;
+    padding: 0px 30px;
+    gap: 16px;
+    justify-content: center;
     align-items: center;
+    border-top: transparent;
+}
+.frame>.tabs>li>p
+{
+    width: 50px;
+    height: 32px;
+    background-color: #858584;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 32px;
+}
+.frame>.tabs>:first-child
+{
     border-bottom: 2px solid #858584;
 }
-.frame .tabs :first-child h3
-{
-    width: fit-content;
-    height: 100%;
-    border-bottom: 0px solid #858584;
-}
-.frame .tabs :first-child p
-{
-    width: 50px;
-    height: 32px;
-    background-color: #858584;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-}
-.frame .tabs :first-child+li
-{
-    display: flex;
-    width: 350px;
-    height: 60px;
-    padding: 30px;
-    align-items: center;
-}
-.frame .tabs :first-child +li h3
-{
-    width: fit-content;
-    height: 100%;
-    border-bottom: 0px solid #858584;
-}
-.frame .tabs :first-child+li p
-{
-    width: 50px;
-    height: 32px;
-    background-color: #858584;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-}
-.frame .tabs :last-child
-{
-    display: flex;
-    width: 350px;
-    height: 60px;
-    align-items: center;
-}
-.frame .tabs :last-child h3
-{
-    width: fit-content;
-    height: 100%;
-    border-bottom: 0px solid #858584;
-}
-.frame .tabs :last-child p
-{
-    width: 50px;
-    height: 32px;
-    background-color: #858584;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 .section
 {
-    padding: 80px 0px;
+    padding: 80px 115px;
     background-color: #3B3B3B;
     color: white;
 }
-.section ul
+.section >ul
 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 469px 469px 469px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-left: calc(50% - 526px);
 }
-.section ul li
+.section >ul >li
 {
     width: 330px;
+    height: 469px;
     background-color: #2B2B2B;
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     border-radius: 20px;
 }
-
-.section ul li .content
+.section>ul>li>img
+{
+    width: 100%;
+    height: 295px;
+}
+.section> ul> li> .content
 {
     padding: 20px 25px 30px 30px;
-
 }
-.section ul li .content  h2
+.section >ul> li> .content > h2
 {
+    font-size: 22px;
     margin-bottom: 5px;
 }
-.section ul li .content div 
+.section >ul >li> .content >div 
 {
     display: flex;
     margin-bottom: 25px;
 }
 
-.section ul li .content div img
+.section >ul >li> .content> div> img
 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     margin-right: 12px;
 }
-.section ul li .content div p 
+.section> ul> li> .content> div >p 
 {
     
     font-size: 16px;
     font-weight: bold;
 }
-.section ul li .content ul
+.section >ul> li> .content> ul
 {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
-.section ul li .content ul :first-child
+.section >ul >li >.content> ul> li
 {
     width: 50%;
-    height: 100%;
 }
-.section ul li .content ul :first-child h4
+.section >ul >li >.content> ul> li> h4
 {
     width: 100%;
     color: #858584;
     font-size: 12px;
     margin-bottom: 8px;
 }
-.section ul li .content ul :first-child p
+.section >ul> li> .content> ul> li> p
 {
     width: 100%;
     font-size: 16px;
 }
 
-.section ul li .content ul :last-child
-{
-    width: 50%;
-}
-.section ul li .content ul :last-child h4
-{
-    width: 100%;
-    color: #858584;
-    font-size: 12px;
-    margin-bottom: 8px;
-}
-.section ul li .content ul :last-child p
-{
-    width: 100%;
-    font-size: 16px;
-}
-.section .row1
-{
-    margin-bottom: 30px;
-}
-.section .row2
-{
-    margin-bottom: 30px;
-}
+
 .footer
 {
+    width: 100%;
     background-color: #2B2B2B;
     padding: 40px 195px;
     color: white;
     display: flex;
     flex-direction: column;
 }
-.footer .frame1
+.footer> .frame1
 {
     display: flex;
     list-style: none;
     margin-bottom: 30px;
     justify-content: center;
 }
-.footer .frame1 :first-child div
+.footer >.frame1 >:first-child> div
 {
     width: 327px;
     padding: 0px 84px 0px 0px;
 }
-.footer .frame1 :first-child div> div
+.footer >.frame1 >:first-child >div> div
 {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
 }
-.footer .frame1 :first-child div>div i
+.footer >.frame1 >:first-child> div>div i
 {
-    font-size: 32px;
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
     color: #A259FF;
     margin-right: 12px;
 }
 
 
-.footer .frame1 :first-child div  ul
+.footer >.frame1 >:first-child> div>  ul
 {
     display: flex;
     list-style: none;
 }
-.footer .frame1 :first-child div ul .icon
+.footer >.frame1 >:first-child >div >ul> .icon
 {
     margin-right: 10px;
 }
-.footer .frame1 li div >h4
+.footer >.frame1 >li >div >h4
 {
     margin-bottom: 25px;
 }
- .footer .frame1 li div > p
+
+ .footer >.frame1 >li >div > p
 {
     font-size: 16px;
     color: #CCCCCC;
     margin-bottom: 20px;
 }
 
-.footer .frame1 :nth-child(2) div
+.footer >.frame1 >:nth-child(2) >div
 {
     width: 240px;
 }
  
-.footer .frame1 :last-child div
+.footer >.frame1 >:last-child >div
 {
     width: 420px;
 }
-.footer .frame1 :last-child div>div 
+.footer >.frame1 >:last-child> div>div 
 {
     display: flex;
     background-color: #FFFFFF;
@@ -446,12 +397,12 @@
     justify-content: space-between;
 }
 
-.footer .frame1 :last-child div div p
+.footer >.frame1> :last-child >div >div> p
 {
     color: #2B2B2B;
     margin-bottom: 0px;
 } 
-.footer .frame1 :last-child div div h3
+.footer> .frame1 >:last-child >div> div >div>h3
 {
     width: 179px;
     height: 60px;
@@ -461,11 +412,15 @@
     margin: 0px;
     line-height: 3;
 }  
-.footer .frame2
+.footer> .frame1 >:last-child >div> div >div>i
+{
+    display: none;
+}
+.footer >.frame2
 {
     border-top: 2px solid #858584;
 }
-.footer .frame2 p
+.footer >.frame2 >p
 {
     margin-top: 20px;
     font-size: 12px;

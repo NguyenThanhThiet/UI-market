@@ -1,0 +1,102 @@
+@media screen and (max-width:835px) {
+    .Navigation
+    {
+        width: 100%;
+        height: 54px;
+        padding: 15px 50px;
+    }
+    .Navigation >.logo >h3
+{
+    margin-left: 9px;
+    font-weight: 800;
+}
+.Navigation >.logo >.fa-solid
+{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+}
+    .menu
+    {
+        display: none;
+    }
+    .Navigation>.fa-solid
+    {
+        display: block;
+        color: white;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .profile
+{
+    width: 100%;
+    height: 280px;
+    background-size: 100% 280px;
+}
+.profile >.avatar
+{
+   width: 120px;
+   height: 120px;
+    left: 72px;
+}
+.info
+{
+    flex-direction: column;
+    padding:  30px 72px;
+}
+.info>.frame2{
+    display: none;
+}
+
+.info>.frame1>.frame2
+{
+    display: block;
+}
+.info>.frame1> .frame2
+{
+    display: flex;
+    font-size: 16px;
+    gap: 20px;
+}
+.frame >.tabs
+{
+    width: 680px;
+    height: 100%;
+    margin-left: calc(50% - 340px);
+}
+.section
+{
+    padding: 80px 72px;
+}
+.section >ul
+{
+    display: grid;
+    grid-template-columns: 330px 330px ;
+    grid-template-rows: 469px 469px 469px 469px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-left: calc(50% - 345px);
+}
+.section>ul>:last-child
+{
+    display: none;
+}
+.footer
+{
+    padding: 40px 72px;
+}
+.footer> .frame1
+{
+   flex-direction: column;
+}
+.footer >.frame1 >:first-child> div>div i
+{
+    font-size: 15px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 12px;
+    text-align: center;
+}
+}

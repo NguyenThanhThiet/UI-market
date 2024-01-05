@@ -1,0 +1,153 @@
+@media screen and (max-width: 376px)
+{
+    .Navigation
+{
+    width: 100%;
+    padding: 15px 30px;
+}
+.Navigation >.logo
+{
+    width: 182px;
+    height: 24px;
+}
+.Navigation >.logo >h3
+{
+    font-size: 14px;
+}
+.profile
+{
+    width: 100%;
+    height: 250px;
+    background-image: url("./folder/Image/Image\ PlaceHolder\ \(10\).png ");
+    background-size: 100% 250px;
+}
+.profile >.avatar
+{
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 60px);
+}
+.info
+{
+    width: 100%;
+    padding:  30px 30px;
+    font-size: 16px;
+}
+.info>.frame1
+{
+    width: 100%;
+}
+.info>.frame1>.frame2
+{
+    flex-direction: column;
+}
+.info>.frame1>.frame2>div
+{
+    width: 100%;
+    height: 60px;
+}
+.stats>li 
+{
+    width: 91px;
+}
+.stats>li>h2
+{
+    font-size: 22px;
+}
+.stats>li>p 
+{
+    font-size: 16px;
+}
+.frame >.tabs
+{
+    width: 315px;
+    height: 100%;
+    margin-left: calc(50% - 157px);
+}
+.frame>.tabs>li
+{
+    width: 105px;
+    height: 60px;
+    padding: 0px 10px;
+    gap: 0px;
+}
+.frame>.tabs>li>p
+{
+    display: none;
+}
+.section
+{
+    padding: 80px 30px;
+}
+.section >ul
+{
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-rows: 469px 469px 469px;
+    grid-row-gap: 30px;
+    margin-left: calc(50% - 163px);
+}
+.section>ul>:nth-child(3)~li                      
+{
+    display: none;
+}
+.footer
+{
+    padding: 40px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.footer >.frame1 >li >div > p
+{
+    width: 100%;
+}
+.footer >.frame1 >:last-child >div {
+    width: 100%;
+}
+.footer >.frame1 >:last-child> div>div 
+{
+    flex-direction: column;
+    width: 100%;
+    height: 108px;
+    padding: 0px 0px;
+    background-color: transparent;
+
+}
+.footer >.frame1> :last-child >div >div> p
+{
+    width: 100%;
+    height: 46px;
+    padding: 16px 20px;
+    border-radius: 20px;
+    background-color: white;
+} 
+.footer> .frame1 >:last-child >div> div>div
+{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #A259FF;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.footer> .frame1 >:last-child >div> div>div >h3
+{
+    width: fit-content;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    line-height: 46px;
+}
+
+.footer> .frame1 >:last-child >div> div>div >i
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+}
+}
